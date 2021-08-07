@@ -1,6 +1,10 @@
 <template>
   <div class="flex justify-center">
-    <h1>{{ msg }}</h1>
+  </div>
+  <div class="py-6 w-full flex justify-center">
+    <h1>{{ msg1 }}</h1>
+    <br />
+    <h1>{{ name }}</h1>
   </div>
 </template>
 
@@ -15,9 +19,9 @@ const HelloWorld = defineComponent({
   name: "Hello World",
   props: props,
   setup(props) {
-    let msg = ref(props.msg);
-
-    return { msg };
+    let msg1 = ref(props.msg);
+    const name = ref("John Doe");
+    return { msg1, name };
   },
 });
 export default HelloWorld;
