@@ -8,14 +8,7 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import { Options } from "vue-class-component";
 import { default as HelloWorld } from "@/components/HelloWorld.vue";
-
-Options({
-  components: {
-    HelloWorld,
-  },
-});
 
 const webName = ref("Vue.js + TypeScript + Tailwind");
 </script>
