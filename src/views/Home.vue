@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <div class="container pt-6">
     <div class="w-full flex justify-center"><img alt="Vue logo" src="../assets/logo.png" class="" /></div>
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
-    {{ webName }}
+    <HelloWorld msg="Welcome to " />
+    <div class="w-full flex justify-center"> {{ webName }} </div>
   </div>
 </template>
 
@@ -17,5 +17,5 @@ Options({
   },
 });
 
-const webName = ref("Vue.js + TypeScript");
+const webName = ref("Vue.js + TypeScript + Tailwind");
 </script>
